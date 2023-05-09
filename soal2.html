@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 2</title>
+  </head>
+  <body>
+    <div style="margin-left: 500px;">
+        <table border="1" style="border-color: red">
+            <tr>
+                <td>
+                    <h1 style="text-align: center">Form Input Biodata</h1>                   
+                </td>
+                <tr>
+                    <td>
+                        <div style="text-align: left">
+                            <form>
+                                <span>Nama Lengkap</span>
+                                <span style="margin-left: 20px">:</span>
+                                <input type="text"  id="nama" name="nama" value=""/>
+                                <br />
+                                <span>Jenis Kelamin</span>
+                        <span style="margin-left: 27px">:</span>
+                        <input type="radio" id="kelamin1" name="laki" value="LakiLaki"/>
+                        <label for="lakilaki">LakiLaki</label>
+                        <input type="radio" id="kelamin2" name="perempuan" value="Perempuan"/>
+                        <label for="perempuan">Perempuan</label>
+                        <br />
+                        <span>Hobi</span>
+                        <span style="margin-left: 86px">:</span>
+                        <input type="checkbox" id="hobi1" name="buku" value="Baca Buku"/>
+                        <label>Baca Buku</label>
+                        <input type="checkbox" id="hobi2" name="olahraga" value="Olahraga"/>
+                        <label>Olah Raga</label>
+                        <input type="checkbox" id="hobi3" name="mainGame" value="Main Game"/>
+                        <label>Main Game</label>
+                        <input type="checkbox" id="hobi4" name="hiking" value="Hiking"/>
+                        <label>Hiking</label>
+                        <br />
+                        <br />
+                        <br />
+                        <button type="submit" onclick="handleSubmit()">Simpan</button>
+                        <br/>
+                    </form>
+                    </div>
+                </td>
+        </tr>
+      </tr>
+    </table>
+</div> 
+<script>
+const handleSubmit=()=>{
+    var nama = document.getElementById("nama")
+    var kelamin = document.getElementById("kelamin")
+    var hobi = document.getElementById("hobi")
+alert(`Data berhasil disimpan`)
+}
+</script>
+</body>
+</html>
